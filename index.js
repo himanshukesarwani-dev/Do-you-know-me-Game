@@ -1,5 +1,5 @@
-// This game consists of 10 questions regarding me(Himanshu)
-// High score = 10
+// This game consists of 15 questions regarding me(Himanshu)
+
 
 var readlineSync = require('readline-sync');
 var userName = readlineSync.question("Enter your Name: ");
@@ -122,7 +122,8 @@ if(userDecision==='yes' || userDecision==='Yes' || userDecision==='YES')
             play(questionList[i].question,questionList[i].answer);
           }
          console.log("Your final Score: ", score)
-          // Level 3
+          
+         // Level 3
           if(score>=5)
           { 
             console.log("\n\nWelcome to level 3")
@@ -146,7 +147,7 @@ if(userDecision==='yes' || userDecision==='Yes' || userDecision==='YES')
                 console.log("------------------------------");
 
           }
-          
+          //  level 3 questions objects
           var questionOne = {
             question : "A Neighbouring Country where I want to visit: ",
             answer: "Bhutan"
@@ -168,7 +169,7 @@ if(userDecision==='yes' || userDecision==='Yes' || userDecision==='YES')
             answer: "2017"
           }
 
-          // array of all level 1 questions
+          // array of all level 3 questions
           var questionList = [ questionOne, questionTwo, questionThree, questionFour, questionFive]
 
 
@@ -229,3 +230,4 @@ if((score>personOne.score) || (score>personTwo.score))
   console.log("\nYou broke the High Scorers record!\nSend me your High Score along with Screenshot, I will update it!")
 }
 
+//The end :)
